@@ -5,7 +5,7 @@ X = [
     [80, 85, 90], 
     [85, 87, 88], 
     [90, 95, 100],
-    [60, 75, 85],   # New data point
+    [60, 75, 85    ],   # New data point
     [70, 80, 90],   # New data point
     [75, 82, 85],   # New data point
     [95, 100, 105], # New data point
@@ -20,7 +20,7 @@ y = [65, 12, 98, 92, 70, 85, 90, 500, 75, 88, 14, 11]
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, random_state=42)
 
-# Create and fit the linear regression model
+# Create and fit the linear regression model--
 model = LinearRegression()
 model.fit(X_train, y_train)
 
